@@ -1,0 +1,56 @@
+body{
+    padding: 0%;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h h h"
+                        "n n n"
+                        "a a as"
+                        "f f f";
+}
+header, nav, article, aside, footer{
+    padding: 5px;
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+article{
+    grid-area: a;
+    background-color: crimson;
+}
+.termekek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.ez{
+    padding: 5px;
+    background-color: white;
+}
+article img{
+    width: 200px;
+}
+aside{
+    grid-area: as;
+    background-color: darkgrey;
+}
+footer{
+    grid-area: f;
+}
