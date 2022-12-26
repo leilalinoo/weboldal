@@ -65,6 +65,9 @@ article {
   background-color: white;
   border: 1px solid gray;
   position: relative;
+  pointer-events: none;
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 .lokikep {
   max-width: 166px;
